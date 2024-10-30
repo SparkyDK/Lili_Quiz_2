@@ -13,5 +13,9 @@ for direction in lights :
             if LED == 1 : #check the state of each individual LED
                 led_count+=1 #update count
                 print("+1 ON LED")
+            elif LED == 0: # not counting this,...
+                pass
+            else:   # ... but will handle error cases of a data structure that isn't only 1's and 0's
+                print("Was expecting a 1 or a 0 for LED values")
 
 print(f"Amount of LEDs that are currently on : {led_count}")
