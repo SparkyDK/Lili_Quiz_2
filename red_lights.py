@@ -12,6 +12,6 @@ for direction in lights :
         off_red_lights +=1 #update count
         print("+1 off red LED")
     else :
-        print("This red LED is on")
+        print("This red LED is on") # Or is not a 0... i.e. could be "blinkysplat" too ... we like error checking and handling!
 
 print(f"Amount of Red LEDs that are off : {off_red_lights}")
