@@ -14,7 +14,7 @@ def check_green_lights(light_setting) :
     one_or_more_NS_green = light_setting[0][0][0]==1 or light_setting[2][0][0]==1    # either one or both of the green LEDs are on
     one_or_more_EW_green = light_setting[1][0][0]==1 or light_setting[3][0][0]==1    # either one or both of the green LEDs are on
     
-    if (one_or_more_NS_green and one_or_more_NS_green):  # note that these variables are both booleans, which are True or False
+    if (one_or_more_NS_green and one_or_more_EW_green):  # note that these variables are both booleans, which are True or False
         print ("Same thing as below, right?")
         
     # Your compound statement is the same, but seems harder to read  
